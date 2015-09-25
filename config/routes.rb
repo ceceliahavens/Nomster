@@ -1,4 +1,6 @@
 Nomster::Application.routes.draw do
+  devise_for :users
+  devise_for :models
   root 'places#index'
 
   resources :places
