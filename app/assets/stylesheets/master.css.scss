@@ -79,4 +79,34 @@ body {
 .clear {
   clear: both;
 }
+
+blockquote {
+  margin: 1.5em 0 1.5em;
+  padding: 0 1em 0 2.5em;
+  position:relative;
+}
+blockquote:before
+ {
+  color: #ccc;
+  content: "\201C";
+  font-size: 5em;
+  position:absolute;
+  left:5px;
+  top: 0.3em;
+  line-height: 0.1em;
+}
+
+blockquote:after
+ {
+   color: #ccc;
+  content: "\201D";
+  font-size: 5em;
+  position:absolute;
+  right:3px;
+  bottom: 0em;
+  line-height: 0.1em;
+}
+blockquote p {
+  display: inline;
+}
  
