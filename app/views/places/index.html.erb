@@ -21,7 +21,15 @@
   </blockquote>
 </div>
 <% end %>
+
+<% @place.photos.each do |photo| %>
+<div class="col=xs-12 col-sm-6">
+  <%= image_tag photo.picture %>
+</div>
+<% end %>
+
   </div>
 <% end %>
+
 
 
