@@ -25,7 +25,6 @@ end
 	def show
 		@place = Place.find(params[:id])
 		@comment = Comment.new
-		@photo = Photo.new
 	end
 
 	def edit
@@ -58,11 +57,6 @@ end
   		@place.destroy
   		redirect_to root_path
 end
-def create
-        @place = Place.find(params[:place_id])
-        @place.photos.create(photo_params)
-        redirect_to place_path(@place)
-    end
 
 	private
 
