@@ -24,4 +24,13 @@
   </div>
 <% end %>
 
+% if place.photos.present? %>
+     <div class="col-xs-12">
+      <% if place.photo.last.present? %>
+          <b><%= place.photos.last %></b> -
+      <% end %>
+      <%= place.photos.last.picture %>
+   </div>
+   <% end %>
+
 
