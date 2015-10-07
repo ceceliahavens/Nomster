@@ -109,4 +109,16 @@ blockquote:after
 blockquote p {
   display: inline;
 }
+
+.show-image {
+  height: 150px;
+  width: 150px;
+  /*padding-top: 10px;
+  */
+}
+
+.index-image {
+  max-width: 350px;
+  max-height: 250px;
+}
  
