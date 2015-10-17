@@ -1,6 +1,15 @@
 FactoryGirl.define do
 
-  	factory :comment do	
+  factory :user do
+		sequence :email do |n|
+			 "test#{n}@gmail.com"
+		end
+
+		password "testing86"
+		password_confirmation "testing86"
+	end
+
+	factory :comment do	
 		message "It's food!"
 		rating "3_stars"
 		association :user
